@@ -1,1 +1,2 @@
-# tierce-de-la-danse-les-marsouins
+# Tiercé de la danse
+Projet de départ.
