@@ -1,1 +1,107 @@
-<!doctype html><html><head><meta charset='utf-8'><title>Tiercé de la Danse</title><link rel='stylesheet' href='style.css'></head><body><h1>🎵 Tiercé de la Danse</h1><p>Projet de départ.</p><form><input placeholder='Nom'><input placeholder='Prénom'><input placeholder='Emplacement'><button>Valider</button></form><script src='musiques.js'></script><script src='script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🎵 Tiercé de la Danse</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"></script>
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <header>
+
+        <img src="images/logo.png" class="logo" alt="Logo Camping">
+
+        <h1>🎵 Tiercé de la Danse</h1>
+
+        <p>
+            Classe les musiques dans l'ordre où tu penses qu'elles seront jouées.
+        </p>
+
+    </header>
+
+    <div class="card">
+
+        <div class="input-group">
+
+            <label>Nom</label>
+
+            <input
+                id="nom"
+                type="text"
+                placeholder="Ton nom">
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Prénom</label>
+
+            <input
+                id="prenom"
+                type="text"
+                placeholder="Ton prénom">
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Numéro de Mobile Home</label>
+
+            <input
+                id="emplacement"
+                type="number"
+                placeholder="Ex : 128">
+
+        </div>
+
+    </div>
+
+    <h2>Classe les musiques</h2>
+
+    <p class="info">
+
+        Maintiens ton doigt sur une musique puis fais-la glisser.
+
+    </p>
+
+    <ul id="music-list" class="music-list">
+
+    </ul>
+
+    <button id="submit">
+
+        Valider mon pronostic
+
+    </button>
+
+</div>
+
+<div id="success" class="success">
+
+    ✅ Merci !
+
+    <br><br>
+
+    Ton pronostic a bien été enregistré.
+
+</div>
+
+<script src="musiques.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
