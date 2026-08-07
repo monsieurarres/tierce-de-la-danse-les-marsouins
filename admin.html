@@ -1,1 +1,130 @@
-<!doctype html><html><body><h1>Admin</h1><p>À compléter.</p></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Administration - Tiercé de la Danse</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="images/logo.png" class="logo">
+
+<h1>Administration</h1>
+
+<div class="card" id="loginCard">
+
+<h2>Connexion</h2>
+
+<input
+type="password"
+id="password"
+placeholder="Mot de passe">
+
+<button id="loginBtn">
+
+Connexion
+
+</button>
+
+</div>
+
+<div
+id="adminPanel"
+style="display:none;">
+
+<div class="card">
+
+<h2>Ordre réel des musiques</h2>
+
+<p>
+
+Glissez les musiques dans leur ordre réel.
+
+</p>
+
+<ul
+id="musicList"
+class="music-list">
+
+</ul>
+
+<button id="calculBtn">
+
+Calculer le classement
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Classement</h2>
+
+<table id="classementTable">
+
+<thead>
+
+<tr>
+
+<th>#</th>
+
+<th>Nom</th>
+
+<th>Score</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Podium</h2>
+
+<div
+class="podium"
+id="podium">
+
+</div>
+
+</div>
+
+<div class="card">
+
+<button id="exportBtn">
+
+Exporter CSV
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="musiques.js"></script>
+<script src="admin.js"></script>
+
+</body>
+
+</html>
